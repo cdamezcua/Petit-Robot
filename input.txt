@@ -1,0 +1,13 @@
+Robot, 
+please turn 90 degrees clockwise, 
+then move 9 blocks ahead, 
+then turn 90 degrees clockwise,
+then move 9 blocks ahead, 
+then turn 90 degrees clockwise,
+then move 9 blocks ahead, 
+then turn 90 degrees clockwise,
+then move 9 blocks ahead, 
+then turn 90 degrees clockwise,
+then move 4 blocks ahead, 
+then turn 90 degrees clockwise,
+and then move 4 blocks ahead. 
