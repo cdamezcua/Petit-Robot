@@ -2,7 +2,7 @@ import os
 import time
 
 NL_CODE_FILE_PATH = "input.txt"
-ASC_FILE_PATH = "output.asm"
+ASC_FILE_PATH = "build/output.asm"
 BOARD_FILE_PATH = "assets/board.txt"
 DELAY = 0.2
 
@@ -246,10 +246,11 @@ class Robot:
 
 
 def main():
-    os.system("yacc -d compilador.y")
-    os.system("lex compilador.l")
-    os.system("gcc y.tab.c lex.yy.c -ly -ll -o compilador")
-    os.system("./compilador " + NL_CODE_FILE_PATH + " > " + ASC_FILE_PATH)
+    os.system("mkdir build")
+    os.system("yacc -d compiler.y && mv y.tab.c y.tab.h ./build")
+    os.system("lex compiler.l && mv lex.yy.c ./build")
+    os.system("gcc ./build/y.tab.c ./build/lex.yy.c -ly -ll -o compiler && mv compiler ./build")
+    os.system("./build/compiler " + NL_CODE_FILE_PATH + " > " + ASC_FILE_PATH)
     simulator = Simulator(BOARD_FILE_PATH, ASC_FILE_PATH)
     simulator.run()
 
