@@ -46,3 +46,13 @@
 ⟨length_parameter⟩ → ⟨ONE_OF_FIRST_FOUR_POSITIVE_MULTIPLES_OF_90⟩
 	          | ⟨POSITIVE_INTEGER⟩
 ```
+
+## Technologies Used
+- Python
+- Lex
+- Yacc
+
+## Authors 🖋
+- Carlos Amezcua - Developer
+- Daniel Muñoz - Developer
+- Diego Curiel - Developer
