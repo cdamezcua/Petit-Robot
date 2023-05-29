@@ -1,4 +1,9 @@
 # Petit-Robot
+The Petit-Robot moves across a 10x10 grid board. Its objective is to follow instructions provided in the input.txt file, where the robot can move forwardor turn to the right. 
+
+It is crucial that the instructions adhere to the specified [context-free grammar](#context-free-grammar) outlined here.
+
+¡It is essential to avoid collisions with the board's walls to prevent the robot from getting lost in the void!
 
 ## Context Free Grammar
 ### Lex
