@@ -5,6 +5,11 @@ It is crucial that the instructions adhere to the specified [context-free gramma
 
 ¡It is essential to avoid collisions with the board's walls to prevent the robot from getting lost in the void!
 
+## Technologies Used
+- Python
+- Lex
+- Yacc
+
 ## Context Free Grammar
 ### Lex
 ```
@@ -51,11 +56,6 @@ It is crucial that the instructions adhere to the specified [context-free gramma
 ⟨length_parameter⟩ → ⟨ONE_OF_FIRST_FOUR_POSITIVE_MULTIPLES_OF_90⟩
 	          | ⟨POSITIVE_INTEGER⟩
 ```
-
-## Technologies Used
-- Python
-- Lex
-- Yacc
 
 ## Authors 🖋
 - Carlos Amezcua - Developer
