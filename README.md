@@ -81,6 +81,20 @@ The operation of this emulator is described below with the help of a diagram:
 
 ![Diagram](Graphviz.jpeg)
 
+### Petit Emulator Messages
+
+#### Compilation Error
+
+When the emulator detects an instruction that could not be recognized by the Yacc parser, it will display the following error message to the user: ```[!] Invalid instruction!```
+
+#### Execution Error
+
+When a MOV instruction causes the robot to go beyond the boundaries of the world, the emulator will display the following error message to the user: ```[!] Robot has hit a wall!```
+
+#### Completed Execution
+
+When the execution of the program is successfully completed without encountering any errors, the emulator will display the following message to the user: ```[!] execution completed successfully!```. This message indicates that the program has finished executing all the instructions in the code and has reached its intended end state without any issues or errors. It serves as a confirmation that the program ran successfully and completed its intended tasks.
+
 ## Technologies Used
 - Python
 - Lex
