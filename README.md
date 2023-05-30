@@ -67,7 +67,15 @@ The following are simple examples of the Petit language syntax and the respectiv
 
 ## Petit Emulator
 
+The Petit Emulator is a Python program that works as follows:
 
+First, it reads a Petit Language code from "./input.txt". It then compiles it and saves the resulting assembled code to "./build/output.asm". It then reads this file line by line and performs the following actions for each line:
+
+- Determines the type of instruction and fragments it into a series of atomic instructions equivalent to the original instruction. For example, the instruction MOV,3 is converted to three consecutive MOV instructions.
+
+- For each generated atomic instruction, it is executed. In the case of MOV instructions, it is verified that the robot has not gone out of the world. If the robot is detected to have gone out of the world, an error message is displayed and program execution is terminated.
+
+- Finally, the robot is rendered again in the world and printed on the console.
 
 ## Technologies Used
 - Python
