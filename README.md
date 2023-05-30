@@ -18,7 +18,7 @@ The following are simple examples of the Petit language syntax and the respectiv
 | Karel, kindly rotate 360 degrees clockwise.                                                                                                                                             | TURN,360                                           |
 | Bot, <br>please turn 180 degrees clockwise,<br>afterwards walk 2 steps forward,<br>then turn 270 degrees clockwise,<br>then move 2 blocks ahead,<br>et then turn 360 degrees clockwise. | TURN,180<br>MOV,2<br>TURN,270<br>MOV,2<br>TURN,360 |
 
-### Context Free Grammar of the Petit Language
+### Context Free Grammar
 #### Lex
 ```
 ⟨VOCATIVE⟩ → Bot | Karel | Mecha | Petit | Robot
@@ -81,7 +81,7 @@ The operation of this emulator is described below with the help of a diagram:
 
 ![Diagram](Graphviz.jpeg)
 
-### Petit Emulator Messages
+### Messages
 
 #### Compilation Error
 
