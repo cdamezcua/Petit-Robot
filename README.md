@@ -1,20 +1,25 @@
-# Petit-Robot
+# Petit Robot
 
 ![Petit Robot animation](media/Petit-Robot-animation.gif)
 
-The Petit-Robot moves across a 10x10 grid board. Its objective is to follow instructions provided in the input.txt file, where the robot can move forward or turn clockwise. 
+Petit Robot is an exciting emulator that simulates a robot that lives in a 10 by 10 matrix and that can be programmed using its own programming language: Petit language.
 
-It is crucial that the instructions adhere to the specified [context-free grammar](#context-free-grammar) outlined here.
+## Petit Language
 
-¡It is essential to avoid collisions with the board's walls to prevent the robot from getting lost in the void!
+The Petit language is remarkably simple as it lacks control structures and variables. It is based on two fundamental instructions: moving forward and turning clockwise. One notable aspect of this language is its peculiar structure, which will only allow you to give commands to the robot if you do so in a gentile manner.
 
-## Technologies Used
-- Python
-- Lex
-- Yacc
+### Examples
 
-## Context Free Grammar
-### Lex
+The following are simple examples of the Petit language syntax and the respective instructions that they generate in assembly language when compiled:
+
+| Petit Language                                                                                                                                                                          | Assembly Language                                  |
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------|
+| Robot, please turn 90 degrees clockwise, then move 4 blocks ahead, and then turn 90 degrees clockwise.                                                                                  | TURN,90<br>MOV,4<br>TURN,90                        |
+| Karel, kindly rotate 360 degrees clockwise.                                                                                                                                             | TURN,360                                           |
+| Bot, <br>please turn 180 degrees clockwise,<br>afterwards walk 2 steps forward,<br>then turn 270 degrees clockwise,<br>then move 2 blocks ahead,<br>et then turn 360 degrees clockwise. | TURN,180<br>MOV,2<br>TURN,270<br>MOV,2<br>TURN,360 |
+
+### Context Free Grammar of the Petit Language
+#### Lex
 ```
 ⟨VOCATIVE⟩ → Bot | Karel | Mecha | Petit | Robot
 ⟨COMMA⟩ → ,
@@ -25,18 +30,18 @@ It is crucial that the instructions adhere to the specified [context-free gramma
 ⟨ATOMIC_UNIT_OF_ANGLE⟩ → degrees
 ⟨ADVERB_OF_ROTATIONAL_SENSE⟩ → clockwise
 
-⟨CUMULATIVE_CONJUNCTION⟩ → and | et
-⟨ADVERB_OF_TIME⟩ → then | next | subsequently | afterwards
-
 ⟨VERB_OF_MOTION⟩ → move | walk
 ⟨POSITIVE_INTEGER⟩ → ℕᐩ
 ⟨ATOMIC_UNIT_OF_LENGTH⟩ → blocks | steps
 ⟨ADVERB_OF_DIRECTION⟩ → forward | ahead
 
+⟨CUMULATIVE_CONJUNCTION⟩ → and | et
+⟨ADVERB_OF_TIME⟩ → then | next | subsequently | afterwards
+
 ⟨FULL_STOP⟩ → .
 ```
 
-### Yacc
+#### Yacc
 ```
 ⟨sentence⟩ → ⟨VOCATIVE⟩ ⟨COMMA⟩ ⟨ADVERB_OF_MANNER⟩ ⟨enumeration_of_instructions⟩ ⟨FULL_STOP⟩
 
@@ -59,6 +64,11 @@ It is crucial that the instructions adhere to the specified [context-free gramma
 ⟨length_parameter⟩ → ⟨ONE_OF_FIRST_FOUR_POSITIVE_MULTIPLES_OF_90⟩
 	           | ⟨POSITIVE_INTEGER⟩
 ```
+
+## Technologies Used
+- Python
+- Lex
+- Yacc
 
 ## Authors 🖋
 - [Carlos Amezcua](https://github.com/cdamezcua) - Developer
