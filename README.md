@@ -77,6 +77,10 @@ First, it reads a Petit Language code from "./input.txt". It then compiles it an
 
 - Finally, the robot is rendered again in the world and printed on the console.
 
+The operation of this emulator is described below with the help of a diagram:
+
+![Diagram](Graphviz.jpeg)
+
 ## Technologies Used
 - Python
 - Lex
