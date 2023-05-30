@@ -14,23 +14,23 @@ It is crucial that the instructions adhere to the specified [context-free gramma
 ### Lex
 ```
 ⟨VOCATIVE⟩ → Bot | Karel | Mecha | Petit | Robot
-⟨ADVERB_OF_MANNER⟩ → please | kindly
 ⟨COMMA⟩ → ,
+⟨ADVERB_OF_MANNER⟩ → please | kindly
 
 ⟨VERB_OF_ROTATION⟩ → turn | rotate
 ⟨ONE_OF_FIRST_FOUR_POSITIVE_MULTIPLES_OF_90⟩ → 90 | 180 | 270 | 360
 ⟨ATOMIC_UNIT_OF_ANGLE⟩ → degrees
 ⟨ADVERB_OF_ROTATIONAL_SENSE⟩ → clockwise
 
+⟨CUMULATIVE_CONJUNCTION⟩ → and | et
+⟨ADVERB_OF_TIME⟩ → then | next | subsequently | afterwards
+
 ⟨VERB_OF_MOTION⟩ → move | walk
-⟨POSITIVE_INTEGER⟩ → ℕ+
+⟨POSITIVE_INTEGER⟩ → ℕᐩ
 ⟨ATOMIC_UNIT_OF_LENGTH⟩ → blocks | steps
 ⟨ADVERB_OF_DIRECTION⟩ → forward | ahead
 
-⟨ADVERB_OF_TIME⟩ → then | next | subsequently | afterwards
-⟨CUMULATIVE_CONJUNCTION⟩ → and | et
-
-⟨FULL_STOP⟩ → \.
+⟨FULL_STOP⟩ → .
 ```
 
 ### Yacc
@@ -58,6 +58,6 @@ It is crucial that the instructions adhere to the specified [context-free gramma
 ```
 
 ## Authors 🖋
-- Carlos Amezcua - Developer
-- Daniel Muñoz - Developer
-- Diego Curiel - Developer
+- [Carlos Amezcua](https://github.com/cdamezcua) - Developer
+- [Daniel Muñoz](https://github.com/DanielMunoz4190) - Developer
+- [Diego Curiel](https://github.com/DiegoCuriel) - Developer
