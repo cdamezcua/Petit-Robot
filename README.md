@@ -41,23 +41,23 @@ It is crucial that the instructions adhere to the specified [context-free gramma
 ⟨sentence⟩ → ⟨VOCATIVE⟩ ⟨COMMA⟩ ⟨ADVERB_OF_MANNER⟩ ⟨enumeration_of_instructions⟩ ⟨FULL_STOP⟩
 
 ⟨enumeration_of_instructions⟩ → ⟨instruction⟩
-			     | ⟨instruction⟩ ⟨COMMA⟩ ⟨last_instruction_of_enumeration⟩
-			     | ⟨instruction⟩ ⟨COMMA⟩ ⟨middle_instructions_of_enumeration⟩ ⟨last_instruction_of_enumeration⟩
+			      | ⟨instruction⟩ ⟨COMMA⟩ ⟨last_instruction_of_enumeration⟩
+			      | ⟨instruction⟩ ⟨COMMA⟩ ⟨middle_instructions_of_enumeration⟩ ⟨last_instruction_of_enumeration⟩
 
 ⟨middle_instructions_of_enumeration⟩ → ⟨ADVERB_OF_TIME⟩ ⟨instruction⟩ ⟨COMMA⟩
-			   	    | ⟨middle_instructions_of_enumeration⟩ ⟨ADVERB_OF_TIME⟩ ⟨instruction⟩ ⟨COMMA⟩
+			   	     | ⟨middle_instructions_of_enumeration⟩ ⟨ADVERB_OF_TIME⟩ ⟨instruction⟩ ⟨COMMA⟩
 
 ⟨last_instruction_of_enumeration⟩ → ⟨CUMULATIVE_CONJUNCTION⟩ ⟨ADVERB_OF_TIME⟩ ⟨instruction⟩
 
 ⟨instruction⟩ → ⟨rotation_instruction⟩
-	     | ⟨motion_instruction⟩
+	      | ⟨motion_instruction⟩
 
 ⟨rotation_instruction⟩ → ⟨VERB_OF_ROTATION⟩ ⟨ONE_OF_FIRST_FOUR_POSITIVE_MULTIPLES_OF_90⟩ ⟨ATOMIC_UNIT_OF_ANGLE⟩ ⟨ADVERB_OF_ROTATIONAL_SENSE⟩
 
 ⟨motion_instruction⟩ → ⟨VERB_OF_MOTION⟩ ⟨length_parameter⟩ ⟨ATOMIC_UNIT_OF_LENGTH⟩ ⟨ADVERB_OF_DIRECTION⟩
 
 ⟨length_parameter⟩ → ⟨ONE_OF_FIRST_FOUR_POSITIVE_MULTIPLES_OF_90⟩
-	          | ⟨POSITIVE_INTEGER⟩
+	           | ⟨POSITIVE_INTEGER⟩
 ```
 
 ## Authors 🖋
