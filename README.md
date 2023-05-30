@@ -1,5 +1,8 @@
 # Petit-Robot
-The Petit-Robot moves across a 10x10 grid board. Its objective is to follow instructions provided in the input.txt file, where the robot can move forwardor turn to the right. 
+
+![Petit Robot animation](media/Petit-Robot-animation.gif)
+
+The Petit-Robot moves across a 10x10 grid board. Its objective is to follow instructions provided in the input.txt file, where the robot can move forward or turn clockwise. 
 
 It is crucial that the instructions adhere to the specified [context-free grammar](#context-free-grammar) outlined here.
 
