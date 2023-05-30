@@ -2,11 +2,11 @@
 
 ![Petit Robot animation](media/Petit-Robot-animation.gif)
 
-Petit Robot is an exciting emulator that simulates a robot that lives in a 10 by 10 matrix and that can be programmed using its own programming language: Petit language.
+Petit Robot is an adorable robot that resides in a fascinating square world composed of 10 rows and 10 columns. This charming automaton can be programmed using its own programming language: Petit Language. Additionally, it features a wonderful tool called Petit Emulator, which allows for the generation of captivating animations that illustrate the program's execution.
 
 ## Petit Language
 
-The Petit language is remarkably simple as it lacks control structures and variables. It is based on two fundamental instructions: moving forward and turning clockwise. One notable aspect of this language is its peculiar structure, which will only allow you to give commands to the robot if you do so in a gentile manner.
+The Petit Language is remarkably simple as it lacks control structures and variables. It is based on two fundamental instructions: moving forward and turning clockwise. One notable aspect of this language is its peculiar structure, which will only allow you to give commands to the robot if you do so in a gentile manner.
 
 ### Examples
 
@@ -64,6 +64,10 @@ The following are simple examples of the Petit language syntax and the respectiv
 ⟨length_parameter⟩ → ⟨ONE_OF_FIRST_FOUR_POSITIVE_MULTIPLES_OF_90⟩
 	           | ⟨POSITIVE_INTEGER⟩
 ```
+
+## Petit Emulator
+
+
 
 ## Technologies Used
 - Python
