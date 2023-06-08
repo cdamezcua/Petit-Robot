@@ -1,6 +1,6 @@
 # Petit Robot
 
-![Petit Robot animation](media/Petit-Robot-animation.gif)
+![Petit Robot animation](https://github.com/cdamezcua/Petit-Robot/blob/main/media/Petit-Robot-animation.gif)
 
 Petit Robot is an adorable robot that resides in a fascinating square world composed of 10 rows and 10 columns. This charming automaton can be programmed using its own programming language: Petit Language. Additionally, it features a wonderful tool called Petit Emulator, which allows for the generation of captivating animations that illustrate the program's execution while this occurs.
 
@@ -79,7 +79,7 @@ First, it reads a Petit Language code from "./input.txt". It then compiles it an
 
 The operation of this emulator is described below with the help of a diagram:
 
-![Diagram](Graphviz.jpeg)
+![Diagram](https://github.com/cdamezcua/Petit-Robot/blob/main/media/Graphviz.jpeg)
 
 ### Messages
 
