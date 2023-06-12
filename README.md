@@ -31,7 +31,7 @@ The following are simple examples of the Petit language syntax and the respectiv
 ⟨ADVERB_OF_ROTATIONAL_SENSE⟩ → clockwise
 
 ⟨VERB_OF_MOTION⟩ → move | walk
-⟨POSITIVE_INTEGER⟩ → ℕᐩ
+⟨POSITIVE_INTEGER⟩ → ℕ
 ⟨ATOMIC_UNIT_OF_LENGTH⟩ → blocks | steps
 ⟨ADVERB_OF_DIRECTION⟩ → forward | ahead
 
