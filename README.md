@@ -101,6 +101,6 @@ When the execution of the program is successfully completed without encountering
 - Yacc
 
 ## Authors 🖋
-- [Carlos Amezcua](https://github.com/cdamezcua) - Developer
-- [Daniel Muñoz](https://github.com/DanielMunoz4190) - Developer
-- [Diego Curiel](https://github.com/DiegoCuriel) - Developer
+- [Carlos Amezcua](https://github.com/cdamezcua) - A01641742
+- [Daniel Muñoz](https://github.com/DanielMunoz4190) - A01641792
+- [Diego Curiel](https://github.com/DiegoCuriel) - A01640372
